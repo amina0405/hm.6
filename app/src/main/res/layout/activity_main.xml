@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo6"
+        android:fitsSystemWindows="true"/>
+
+    <TextView
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Welcom"
+        android:layout_above="@+id/Registration"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Добро пожалывать!"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Registration"
+        android:layout_above="@id/gmail"
+        android:layout_marginBottom="30dp"
+        android:layout_centerInParent="true"
+        android:text="Выполните вход \n или зарегистрируйтесь."
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gmail"
+        android:layout_above="@id/password"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ведите вашу почту"
+        android:padding="20dp"
+        android:background="@drawable/round_corners"
+        android:textSize="16dp"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_above="@id/bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="Ведите пароль"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:background="@drawable/round_corners"
+        android:textSize="16dp"
+        android:backgroundTint="@color/white"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom"
+        android:layout_above="@id/forgot_your_password"
+        android:layout_marginBottom="16dp"
+        android:layout_marginHorizontal="20dp"
+        app:cornerRadius="10dp"
+        android:padding="15dp"
+        android:text="Войдти"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/purple_200"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot_your_password"
+        android:text="Забыли пароль?"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Clik"
+        android:layout_alignTop="@id/forgot_your_password"
+        android:layout_marginStart="30dp"
+        android:text="Нажми сюда"
+        android:textSize="16sp"
+        android:textColor="@color/orange"
+        android:layout_toEndOf="@id/forgot_your_password"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>
